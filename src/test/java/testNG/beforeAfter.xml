@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="E:/WORK/IntelliJ Projects/Selenium/src/test/java/testNG/_4_BeforeTest_2.java">
+        <classes>
+            <class name="testNG._4_BeforeTest_2"/>
+            <class name="testNG._4_BeforeTest_1"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="E:/WORK/IntelliJ Projects/Selenium/src/test/java/testNG/_5_BeforeSuite.java">
+        <classes>
+            <class name="testNG._4_BeforeTest_1"/>
+            <class name="testNG._4_BeforeTest_2"/>
+            <class name="testNG._5_BeforeSuite"/>
+        </classes>
+    </test>
+</suite>

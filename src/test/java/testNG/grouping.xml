@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="E:/WORK/IntelliJ Projects/Selenium/src/test/java/testNG/_1_FistTestCase.java">
+
+        <groups>
+            <run>
+                <include name="sanity"/>
+                <include name="regression"/>
+<!--                <exclude name="regression"></exclude>-->
+
+<!--                new group to run tests that must have both sanity and regression, not just one of them-->
+<!--                <include name="functional"/>-->
+            </run>
+        </groups>
+
+        <classes>
+            <class name="testNG._1_FistTestCase"/>
+            <class name="testNG._2_BeforeMethod"/>
+        </classes>
+    </test>
+</suite>

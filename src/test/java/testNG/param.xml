@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--      parallel="tests"         thread-count="5"   max 5-->
+<suite name="All Test Suite" parallel="tests" thread-count="5">
+
+
+<!--      parallel="classes"   -->
+    <test verbose="2" preserve-order="true" parallel="classes" name="chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://parabank.parasoft.com/parabank/index.htm"></parameter>
+        <classes>
+            <class name="testNG._10_ParamTest"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="edge">
+        <parameter name="browser" value="edge"></parameter>
+        <parameter name="url" value="https://parabank.parasoft.com/parabank/index.htm"></parameter>
+        <classes>
+            <class name="testNG._10_ParamTest"/>
+        </classes>
+    </test>
+</suite>

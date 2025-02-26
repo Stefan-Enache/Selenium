@@ -7,7 +7,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DynamicTableInterview {
+public class DynamicTable {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));

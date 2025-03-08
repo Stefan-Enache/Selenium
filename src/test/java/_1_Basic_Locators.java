@@ -11,7 +11,7 @@ public class _1_Basic_Locators {
     public static void main(String[] args) throws InterruptedException {
 
         ChromiumDriver driver = new EdgeDriver(); // WebDriver -> RemoteWebDriver -> ChromiumDriver -> ChromeDriver
-        driver.get("https://www.orangehrm.com/"); // Preferably without www.
+        driver.get("https://www.orangehrm.com/");
         driver.manage().window().maximize();
 
         System.out.println(driver.getTitle());
